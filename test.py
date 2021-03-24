@@ -24,6 +24,6 @@ class Test(unittest.TestCase):
 		d = {"a": {"b": {"c": 1}}, "d": 2}
 		expected = {"a.b.c": 1, "d": 2}
 		self.assertEqual(flatten(d), expected, "wrong output")
-
+		
 if __name__ == '__main__':
 	unittest.main()
